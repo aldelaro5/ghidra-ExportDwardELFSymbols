@@ -10,7 +10,7 @@ import com.sun.jna.ptr.PointerByReference;
 
 public interface LibdwarfLibrary extends Library
 {
-    public static final LibdwarfLibrary INSTANCE = Native.load(Platform.isWindows() ? "libdwarf" : "dwarf",
+    public static final LibdwarfLibrary INSTANCE = Native.load(Platform.isWindows() ? "libdwarf_vendor" : "dwarf_vendor",
 	    LibdwarfLibrary.class);
 
     // functions
